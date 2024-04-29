@@ -1,5 +1,5 @@
 package com.example.estoque.produto.entity;
 
 public enum ProdCategoria {
-    ALIMENTAR, HIGIENICO, OUTROS
+    ALIMENTAR, HIGIENICO, ELETRONICOS, DOMESTICO
 }
