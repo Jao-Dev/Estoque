@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.estoque.produto.entity.ProdCategoria;
 import com.example.estoque.produto.entity.ProdVisibilidade;
 import com.example.estoque.produto.entity.Produto;
 import com.example.estoque.produto.repository.ProdutoRepository;
