@@ -23,6 +23,11 @@ public class ProdutoController {
     @Autowired
     private ProdutoRepository prodRep;
 
+    @GetMapping("/")
+    public String home(){
+        return "index.html";
+    }
+
     @GetMapping("/estoque")
     public List<Produto> listarAtivos(){
         return prodRep.findByVisibilidade(ProdVisibilidade.ATIVADO);
