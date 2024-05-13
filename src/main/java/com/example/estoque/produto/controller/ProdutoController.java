@@ -1,5 +1,6 @@
 package com.example.estoque.produto.controller;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,18 +24,13 @@ public class ProdutoController {
     @Autowired
     private ProdutoRepository prodRep;
 
-    @GetMapping("/")
-    public String home(){
-        return "index.html";
-    }
-
     @GetMapping("/estoque")
     public List<Produto> listarAtivos(){
         return prodRep.findByVisibilidade(ProdVisibilidade.ATIVADO);
     }
 
     @GetMapping("/estoqueTotal")
-    public List<Produto> listar(){
+    public List<Produto> listarTodos(){
         return prodRep.findAll();
     }
 

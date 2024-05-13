@@ -20,7 +20,7 @@ public class SecurityConfig {
                 authorize.requestMatchers("/logout").permitAll();
                 authorize.anyRequest().authenticated();
             })
-            .formLogin(Customizer.withDefaults())
+            .oauth2Login(Customizer.withDefaults())
             .build();
     }
 }
